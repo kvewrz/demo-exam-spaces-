@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./back
+    container_name: docker-back
+    ports:
+      - "3010:3010"
+  
+  frontend:
+    build: ./front
+    container_name: docker-front
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
