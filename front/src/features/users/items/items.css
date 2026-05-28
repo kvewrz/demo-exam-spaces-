@@ -1,0 +1,116 @@
+
+.block-items{
+    margin: 20px auto;
+}
+.block-items h1{
+    text-transform: uppercase;
+    font-size: 26px;
+}
+.items{
+    max-width: 400px;
+    margin: 20px auto 30px auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.6s;
+  
+}
+.items:hover{
+    transform: scale(1.01);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-content: center;
+    
+}
+.items h2{
+    color: rgb(49, 47, 47);
+    border-left: 1px solid whitesmoke;
+    padding-left: 5px;
+    transition: all 0.6s;
+}
+.items h2:hover{
+    color: black;
+    padding-left: 15px;
+    border-left: 1px solid black;
+}
+.items button{
+    text-transform: uppercase;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 10px;
+    transition: all 0.6s;
+}
+.items button:hover{
+    transform: translateY(-1px);
+    background: none;
+    color: rgb(6, 6, 6);
+}
+.filter{
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.filter label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+    color: rgb(104, 102, 102);
+    transition: all 0.6s;
+}
+.filter label:focus-within{
+    color: black;
+}
+.filter input{
+border: none;
+outline: none;
+border-bottom: 1px solid rgb(40, 39, 39);
+text-align: center;
+}
+.filter select{
+border: none;
+outline: none;
+border-bottom: 1px solid rgb(40, 39, 39);
+text-align: center;
+}
+.block-page{
+    margin: 20px auto;
+}
+.block-page button{
+    border: none;
+    background: black;
+    color: white;
+    margin-right: 8px;
+    padding: 20px 20px;
+    border-radius: 12px;
+    transition: all 0.6s;
+}
+.block-page button:hover{
+    transform: translateY(-1px);
+}
+.block-page button.active{
+    background: rgb(232, 228, 228);
+    color: rgb(10, 10, 10);
+   
+}
+
+@media (min-width:320px) and (max-width:870px) {
+    .grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    justify-content: center;
+    
+}
+.block-items{
+    width: 100%;
+}
+}
